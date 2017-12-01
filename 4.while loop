@@ -1,0 +1,70 @@
+#while loop
+
+The two distinctive loops we have in Python 3 logic are the "for loop" 
+and the "while loop." Both of them achieve very similar results, 
+and can almost always be used interchangeably towards a goal.
+Many times it comes down to programmer preference,
+or is reliant on efficiency. 
+Generally, the for loop can be more efficient than the while loop, 
+but not always.
+
+The idea of the While loop is:
+
+While something is the case, do the following block of code.
+
+Here is an example of a while loop:
+
+         condition = 1
+
+         while condition < 10:
+	       print(condition)
+	       condition += 1
+		
+
+In this code, we have defined a variable name condition,
+and condition starts at a value of 1.
+
+Next,
+we specify the terms of the while statement, 
+which are : While the condition variable is less than 10, 
+we will print the condition variable out. 
+After printing out the condition, 
+we will add 1 to the current condition.
+
+This process will continue until condition equals 10.
+
+There is usually more complex code within the while loop. 
+If you are not familiar with what a code block is, in the case of the while loop above, 
+the "code block" within the while loop is:
+
+	print(condition)
+	condition += 1
+		
+
+This setup of a while loop is known as creating a "counter," 
+since basically that is what we're doing.
+We're saying we just want to count 1 for every iteration 
+and eventually stop at our limit. 
+While loops are usually finite and defined in this sense, 
+but while loops can also be undefined. Something like:
+
+Assuming we had something built to detect weather:
+
+  while isRaining:
+	print(condition)
+		
+
+In this case, 
+this loop would continue running while it was raining outside.
+When the rain stopped, the loop would cease.
+
+Another example is what is known as the infinite loop. 
+This is easiest done with the help of a while loop.
+
+  while True:
+	print('doing stuff!!')
+		
+
+If you actually run the above code,
+you can stop it by doing ctrl+c to break it. 
+The above is an intentional infinite loop.
