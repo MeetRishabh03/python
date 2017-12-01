@@ -1,0 +1,22 @@
+This Python 3 tutorial is focused on the making of modules. Modules are often confusing to people who are first getting started in Python, and they don't have to be! For the most part, modules are just Python scripts that are stored in your Lib or Lib/site-packages folder, or local to the script being run. That's it. The installation of *most* modules is simply the moving of the module's files into these directories. It's very basic. You should be able to, after watching this quick series, just simply download the source code of the module that you are looking to employ, and move the source code yourself to the packages directory.
+
+My aim here is to show how you can create your very own module and where you can put it so you can import it. Hopefully with this information, you can better understand how modules work, that you can edit modules, and what to do if you only have the source code for the module you are wanting.
+
+To do this, the example module that we create is called examplemod.py, and within it is just the following:
+
+def ex(data):
+    print(data)
+
+That's it! We just put a function in there that, when called, will just print out the parameter.
+
+Now, we just need to import and use that.
+
+Doing so is as simple as:
+
+import examplemod
+examplemod.ex('test')
+
+To do this, the examplemod.py file must be in the same directory as your running-program, or in your Python packages directory. If you are on a windows machine, this will be C:/python34/Lib/site-packages/
+
+Hopefully this can help you see that there really is no "magic" behind most modules. You can look through your own standard library that comes with Python in the /Lib/ directory. This is where all of your standard library modules are. Just take a peak through them to see most of them are just simple Python scripts. There are some more complex modules out there, but the vast majority of Python modules are just simple scripts, sometimes they are "packages" where there are many scripts within a folder, but this is still all it is.
+
