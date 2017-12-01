@@ -1,0 +1,35 @@
+#maths basic with python3
+
+Math is a pretty popular topic, so we should probably learn how to do it in Python 3. 
+Luckily for us, math is so very popular that it works extremely simply.
+
+1+3		
+
+Here, we have some simple addition, the returned number is 4.
+
+4*4		
+
+Next up, multiplication, fancy stuff! The return is 16.
+
+5-2		
+
+Subtraction, even fancier. Return will be 3
+
+5/2
+
+Division, now this is actually fancy, based on Python's history.
+
+In Python 2, the division does not necessarily work in the way expected. 
+If you divide two whole numbers, you will be returned a whole number. 
+You must divide one of the numbers as a float in order to get a proper return.
+This was changed in Python 3+, and now you always get expected division, yay!
+
+#exponents
+		4**4
+		
+
+There is another way to do exponents, but this works just fine, and is a familiar syntax for it.
+
+That's it for basic math. 
+It really is quite simple. Math is quite integral to a lot of programs,
+so it is very nice that it is kept simple enough.
