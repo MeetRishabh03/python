@@ -1,0 +1,32 @@
+Function parameter default:
+
+In the previous tutorial, 
+we explained what function parameters were, 
+and that we could have an infinite amount of them. 
+With this, we explained how having a lot of them could become troublesome and tedious for the programmer using the function. Luckily, there is a solution for this.
+
+Sometimes, it can make a lot of sense to make a complex function highly customize-able. That said, some people may want to use the function in it's simple... "default" ... form. Think about it like buying a car. Some people want to just buy the base model, with all the features that come by default from the factory. Other people want to customize their car in many different ways.
+
+Luckily, we allow people who want to customize their car the option to do it, but we do not ask every buyer of every car what kind of wheels they want, what brand of tire, what screws they want, what kind of leather seats by what brand, what windshield, what steering wheel, what lights... etc. This is just too much for some people and what they want to use the car for. Same goes for functions in programming.
+
+So we have function parameter defaults, which allow the function's creator to set "default" values to the function parameters. This allows anyone to use a function with the default values, yet lets anyone who wishes to customize them the ability to specify different values.
+
+When using defaults, any parameters with defaults should be the last ones listed in the function's parameters.
+
+Something like:
+
+def simple(num1, num2=5):
+    pass
+
+This is just a simple definition of a function, with num1 not being pre-defined (not given a default), and num2 being given a default.
+
+def basic_window(width,height,font='TNR'):
+    # let us just print out everything
+    print(width,height,font)
+basic_window(350,500)
+
+Here, we can see that, if there is a function parameter default, then, when we call that function, we do not need to define or even mention that parameter at all!
+
+basic_window(350,500,font='courier')
+
+Here's another example, only this time we see that, despite the parameter having a default, we are able to still change it.
