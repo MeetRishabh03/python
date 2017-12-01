@@ -1,0 +1,25 @@
+
+This tutorial covers some of the basics to the sys module in Python 3. The sys module allows you to use stdin() and stdout(), as well as stderr(), but, most interestingly, we can utilize sys.argv(). To many, this is a confusing concept, but it is pretty simple and very useful once you learn it. The idea of sys.argv is to allow you to pass arguments through to Python from the command line.
+
+This ability acts as a bridge to the ability to communicate between Python and other languages, which can then communicate back through the shell to interact.
+
+With stdout and stdin, we can pass messages and errors through to the command line, or just use it for logging purposes.
+
+Here is some basic code that matches the video:
+
+import sys
+
+sys.stderr.write('This is stderr text\n')
+sys.stderr.flush()
+sys.stdout.write('This is stdout text\n')
+
+Above, we have some of the basic stderr and stdout statements. Try them out in both a shell like bash or cmd.exe, then also try them in your Python shell.
+
+def main(arg):
+    print(arg)
+
+main(sys.argv[1])
+
+This code utilizes argv, which allows you to pass through arguments from the shell to your Python script or program. You will get an error if you run this without some arguments from the shell. You can always put an if-statement that asks whether sys.argv has a length greater than, for example, one, since here, we are looking for at least two.
+
+Keep in mind that the above code is really only able to shine when you open up your command line / bash, run the script with python scriptname.py, and then add commands to it. Naturally, the script's name will be the first in the list of argv, but then anything else passed through after will be subsequent on the list. Definitely a fun tool to use, and a great way to communicate between languages and other programs.
