@@ -1,0 +1,8 @@
+In this tutorial, we cover how to get user input. For a simple text-based GUI (graphical user interface), it can sometimes be useful to allow for a user to enter some input into the program while it runs. Using Python 3's "input" function, we can do that.
+
+In time, you may want to eventually learn how to make GUIs in windows, but you will still find yourself needing raw input from time to time, like text fields, even in these sorts of GUIs.
+
+x = input('What is your name?: ')
+print('Hello',x)
+
+If you enter your name, the output will be a hello and your name. Look at that, programming is already making you new friends!
