@@ -1,26 +1,50 @@
 #Print Function and Strings
 
-The print function in Python is a function that outputs to your console window whatever you say you want to print out. At first blush, it might appear that the print function is rather useless for programming, but it is actually one of the most widely used functions in all of python. The reason for this is that it makes for a great debugging tool.
+The print function in Python is a function that outputs to your console window whatever you say you want to print out.
+At first blush, it might appear that the print function is rather useless for programming,
+but it is actually one of the most widely used functions in all of python.
+The reason for this is that it makes for a great debugging tool.
 
-"Debugging" is the term given to the act of finding, removing, and fixing errors and mistakes within code.
+"Debugging" is the term given to the act of finding, 
+removing, and fixing errors and mistakes within code.
 
-If something isn't acting right, you can use the print function to print out what is happening in the program. Many times, you expect a certain variable to be one thing, but you cannot see what the program sees. If you print out the variable, you might see that what you thought was, was not.
+If something isn't acting right,
+you can use the print function to print out what is happening in the program.
+Many times, you expect a certain variable to be one thing,
+but you cannot see what the program sees.
+If you print out the variable, 
+you might see that what you thought was, was not.
 
-You can follow this tutorial with the video and the embedded console, via the text and consoles, or via your own installation of Python.
+You can follow this tutorial with the video and the embedded console,
+via the text and consoles, 
+or via your own installation of Python.
 
-Next up, strings, what are they? Strings are just "strings" of text, hence the name. Strings are a type of data. Another type of data is integers.
+Next up, strings, what are they? Strings are just "strings" of text, hence the name.
+Strings are a type of data. 
+Another type of data is integers.
 
-To build on the video, here are some examples:
+here are some examples:
     
      #code
      print('Single Quotes')
      print("double quotes")
 		
-    We're printing out a string. Notice that the quotes are single quotes. You can use single quotes or double quotes, but they need to be used together.
+    We're printing out a string.
+    Notice that the quotes are single quotes.
+    You can use single quotes or double quotes,
+    but they need to be used together.
 
-While we're talking about strings and the print function, it would be useful to discuss concatenation. Concatenation just means the combination of things. You can use the "+" or the "," to join strings together. If you use a ",", then you will have a space in between the strings you joined. If you use a "+", then the strings will be strung together with no space. You will need to add one if you wanted.
+While we're talking about strings and the print function,
+it would be useful to discuss concatenation. 
+Concatenation just means the combination of things. 
+You can use the "+" or the "," to join strings together.
+If you use a ",", then you will have a space in between the strings you joined.
+If you use a "+", then the strings will be strung together with no space.
+You will need to add one if you wanted.
 
-If you use the "+" to join integers and floats together, then you will perform an arithmetic operation. If you use the ",", then it will print them out separately, with a space.
+If you use the "+" to join integers and floats together, 
+then you will perform an arithmetic operation.
+If you use the ",", then it will print them out separately, with a space.
 
      #code
      print('can do this',5)
@@ -29,7 +53,10 @@ If you use the "+" to join integers and floats together, then you will perform a
      
 You cannot use the "+" to join strings with ints or floats, you must use the ",".
 
-It is also important to bring up how to put quotes within strings. You can either put double quotes inside single quotes, singles inside doubles, or use the "\" backslash. The \ character is known as an escape character, and it will "escape" the characteristic of the following character and just take on the 'visual' aspect of it.
+It is also important to bring up how to put quotes within strings. You can either put double quotes inside single quotes,
+singles inside doubles, or use the "\" backslash. 
+The \ character is known as an escape character,
+and it will "escape" the characteristic of the following character and just take on the 'visual' aspect of it.
 
 The purpose of the "escape character" is to escape various characteristics for characters. For example, a quotation, ", in a string might wreak havoc. Take for example: x = "He said, "Hello there!" "
 
