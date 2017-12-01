@@ -1,0 +1,58 @@
+#variables
+
+In almost every single Python program you write,
+you will have variables. 
+Variables act as placeholders for data. 
+They can aid in short hand, as well as with logic, as variables can change,
+hence their name.
+
+Variables help programs become much more dynamic, 
+and allow a program to always reference a value in one spot,
+rather than the programmer needing to repeatedly type it out, and, worse,
+change it if they decide to use a different definition for it.
+
+Variables can be called just about whatever you want. 
+You wouldn't want them to conflict with function names,
+and they also cannot start with a number.
+
+You want to be careful what you name variables,
+classes (discussed later), and functions (discussed later),
+so that they do not have the same names as eachother.
+
+For example:
+you have leared about the print function.
+What if you go and define a variable named print?
+
+Say, for example, you do:
+
+print = print("Uh oh!")
+
+Now you have a variable and a function named print, 
+which can cause trouble down the road!
+
+exampleVar = 55
+print(exampleVar)
+		
+
+In this case, we will have a 55 printed out to console. 
+So, in this case, we were able to store an integer to our variable.
+
+cannotDo = Hey!
+		
+
+Hey! is not a valid datatype, and this will throw an error.
+You would need to throw quotes around the string.
+
+canDo = 'Hey!'
+print(canDo)
+		
+
+This is acceptable.
+
+canContainOperations = 5/4
+print(canContainOperations) 
+		
+
+Here, we can see that we were even able to store the result of a calculation to our variable.
+
+We can even store a variable to our variable, or an operation with our variables to a variable. Something like var3 = (var2/var1) would work. 
