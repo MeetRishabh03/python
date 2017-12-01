@@ -1,0 +1,99 @@
+In this Python 3 programming tutorial, we cover the Try and Except statements, which are used for error handling. These statements work similarly to the if-else, where if the Try runs, the except will not run. If the Try fails, then the exception will run with the error that was just generated in the try. Try and Except is mainly used to handle failures in code, which result in errors. With handling exceptions, you can keep your code running when it would otherwise grind to a catastrophic halt from an error. You can also use error handling to log problems in your code, or to even attempt to remedy the problem as a part of the program.
+
+The following code is complimentary to the video, as well as it builds on the previous video, where we read from a CSV file. Here is the sample data from the CSV file that we are reading from:
+
+1/2/2014,5,8,red
+1/3/2014,5,2,green
+1/4/2014,9,1,blue
+
+Now we need to learn how to handle errors in Python. As you can see, if you do not have any error handling, your program or script will just stop completely. This is not likely to be desired! First, we want to figure out how to handle errors, which is really just treating the symptom to the problem, not really solving the problem. Then, we want to learn how to avoid these sorts of problems to begin with, using proper logic in our programs.
+
+Here is the sample code that matches the video:
+
+import csv
+
+with open('example.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+    dates = []
+    colors = []
+    for row in readCSV:
+        color = row[3]
+        date = row[0]
+
+        dates.append(date)
+        colors.append(color)
+
+    print(dates)
+    print(colors)
+
+The above is the same, but here's where the code changes. We can put the "try" statement in quite a few places to solve our problem. I like to put the try statement in front of any new "block" of logic. Here, our logic block begins by asking the user to enter some input. This should immediately be a cause for concern, since we're opening a "door" to our program, and we might receive some unwanted input.
+
+A great example of this is input fields on websites. Say you have a log-in with username and password field. Generally, you expect the user to enter a username and a password. First off, they might enter a non-existent username and password. Either they do not have one, they forgot it, or accidentally made a mistake in the input.
+
+Sometimes, input isn't as innocent as this, as people sometimes have more sinister intentions. Using what is known as SQL injection, hackers can attempt to either gain access to your database or administration, or even wreak havoc on your website by modifying or just plain dropping tables in your database. Instead of entering usernames and passwords, hackers can enter SQL queries. If not handled right, your back-end code might actually go to run the SQL statement the hacker intends. The basic SQL injection usually starts with closing off the SQL statement you intended to run from your field, then begins a brand new query from the field. It looks nothing like a username or a password to a person, but your system may still blindly run it. This is a prime example where not only error handling is necessary to know, but also proper logic is imperative.
+
+    try:
+        whatColor = input('What color do you wish to know the date of?:')
+        coldex = colors.index(whatColor)
+        theDate = dates[coldex]
+        print('The date of',whatColor,'is:',theDate)
+
+    # in python 2, this is read exception Exception, e. It's just helpful
+    # to know this for porting old scripts if you need to.
+
+
+    except Exception as e:
+        print(e)
+        
+
+    ''' So this will try a block of code, and, if there is an exception, it
+    will continue to run...
+    '''
+    print('Stillllllll running though!')
+
+This shown, we should always treat try and exception handling as a last resort, or a final point of failure. We should really instead code in a conditional before the exception is thrown, something like:
+
+with open('example.csv') as csvfile:
+    readCSV = csv.reader(csvfile, delimiter=',')
+    dates = []
+    colors = []
+    for row in readCSV:
+        color = row[3]
+        date = row[0]
+
+        dates.append(date)
+        colors.append(color)
+
+    print(dates)
+    print(colors)
+
+    # we could put the try anywhere. The weak point, however, starts
+    # in my opinion immediately when we accept user input... no longer
+    # is this is a closed-program, so I would personally code this block
+    # here, but you could put the try right about the print statement
+    # of where we search for the color and we KNOW it will throw an error
+    # if not in the list. 
+    try:
+        whatColor = input('What color do you wish to know the date of?:')
+
+        if whatColor in colors:
+            coldex = colors.index(whatColor)
+            theDate = dates[coldex]
+            print('The date of',whatColor,'is:',theDate)
+        else:
+            # now we can handle a specific scenario, instead
+            # of handling it with a "catch-all" error.
+            # now we have error handling and
+            # proper logic. Yay.
+            print('This color was not found.')
+
+    # in python 2, this is read exception Exception, e. It's just helpful
+    # to know this for porting old scripts if you need to.
+
+
+    except Exception as e:
+        print(e)
+
+Above, we've not only handled an error if we get one, but we also have coded in proper logic. Just as a quick note, the above logic will absolutely not stop an SQL injection. I am just using that as an example of why logic is necessary!
+
+Also, it should be noted that you can stack exceptions to cover specific errors. 
