@@ -1,0 +1,27 @@
+# if else:
+
+The If-Else statement is designed to build on the if statement's logic. Here, we ask if something is the case, and, if it is we do something. Then we say otherwise, which is contingent on the previous if statement, do something else. If the previous if statement is true, then the else will not run. If the if statement is false, then the else statement will run.
+
+Here's an example:
+
+x = 5
+y = 8
+if x > 55:
+    print('x is greater than 55')
+else:
+    print('x is not greater than 55')
+
+So first we ask if x is greater than 55. It is not, therefor the else statement runs.
+
+If we instead do:
+
+x = 5
+y = 8
+if x < 55:
+    print('x is less than 55')
+else:
+    print('x is not less than 55')
+
+...asking if x is less than 55, which it is, so the else statement does not run.
+
+It is important to note that the else statement only applies to the most recent if statement. You can stack multiple if statements, but the else statement will only be contingent on the if statement that is right above it
