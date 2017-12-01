@@ -1,0 +1,12 @@
+Now that we know how to write and append to files, we might want to learn how to read data from files into the Python program. Doing this is quite simple, and has very similar syntax.
+
+# similar syntax as you've seen, 'r' for read. You can just throw a .read() at
+# the end, and you get:
+readMe = open('exampleFile.txt','r').read()
+print(readMe)
+
+Often times, people are reading something with many lines into memory. Maybe it's a list of names, or something like that. We can then use ".readlines()" to help us split all of this up into a Python list for us.
+
+# this will instead read the file into a python list. 
+readMe = open('exampleFile.txt','r').readlines()
+print(readMe)
