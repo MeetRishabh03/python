@@ -1,0 +1,29 @@
+Since Python is such a popular programming language for data analysis, it only makes sense that it comes with a statistics module. Sadly, this is not available in Python 2.7, but that's okay because we're in Python 3!
+
+The statistics module comes with an assortment of goodies: Mean, median, mode, standard deviation, and variance.
+
+These are all fairly straight forward to use, here and some simple examples:
+ 
+
+import statistics
+
+example_list = [5,2,5,6,1,2,6,7,2,6,3,5,5]
+
+x = statistics.mean(example_list)
+print(x)
+
+y = statistics.median(example_list)
+print(y)
+
+z = statistics.mode(example_list)
+print(z)
+
+a = statistics.stdev(example_list)
+print(a)
+
+b = statistics.variance(example_list)
+print(b)
+
+We've not gone much over importing things in Python, so I've kept this basic. As you can see, you just simply pass a list through the module's function, and you're output is the answer. Here, we're saving the output to a variable, and then we're just printing out the variable. In normal circumstances, you'd probably continue doing things with it.
+
+Here, we've seen how simple importing and using modules can be, but there are a lot of other options when it comes to how we import things.
