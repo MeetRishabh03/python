@@ -1,0 +1,85 @@
+# if elif else
+
+Now we bring the in "elif" statement. 
+The elif allows us to tie multiple if statements together as we might have intended to before with multiple if statements before we learned that the else will only be contingent on the if statement above it. 
+
+
+The "elif" statement is a hybrid of the else and the if. The way it works is:
+
+We ask if something is the case. If it is, then the elif and the else will not run. If it is not, then the elif will run and question the if statement. If it is True, then it will run and the else will not run. If it is not true, then the else statement will run. Here's an example:
+
+x = 5
+y = 10
+z = 22
+
+if x > y:
+    print('x is greater than y')
+elif x < z:
+    print('x is less than z')
+else:
+    print('if and elif never ran...')
+
+Here, we ask if x is greater than y first. 5 is not greater than 10, so this is False. So the elif runs to ask if x is less than z. In this case, it is asking if 5 is less than 22. It is, so we will see a print out saying x is less than z. The "else" part of this will not run.
+
+x = 5
+y = 10
+z = 22
+
+if x > y:
+    print('x is greater than y')
+elif x > z:
+    print('x is greater than z')
+else:
+    print('if and elif never ran...')
+
+Here, we ask if x is greater than y first. 5 is not greater than 10, so this is False. So the elif runs to ask if x is greater than z. In this case, it is asking if 5 is greater than 22. This is false, so it does not run. Then, we find ourselves at the else statement, which notifies us that 'if and elif never ran...'
+
+Now we bring the in "elif" statement.
+The elif allows us to tie multiple if statements together
+as we might have intended to before with multiple if statements before we learned that the else will only be contingent on the if statement above it.
+
+The "elif" statement is a hybrid of the else and the if. The way it works is:
+
+We ask if something is the case. 
+If it is, then the elif and the else will not run. 
+If it is not, then the elif will run and question the if statement. 
+If it is True, then it will run and the else will not run. If it is not true, 
+then the else statement will run. Here's an example:
+
+x = 5
+y = 10
+z = 22
+
+if x > y:
+    print('x is greater than y')
+elif x < z:
+    print('x is less than z')
+else:
+    print('if and elif never ran...')
+
+Here, 
+we ask if x is greater than y first.
+5 is not greater than 10, so this is False. 
+So the elif runs to ask if x is less than z. 
+In this case, it is asking if 5 is less than 22. 
+It is, so we will see a print out saying x is less than z. 
+The "else" part of this will not run.
+
+x = 5
+y = 10
+z = 22
+
+if x > y:
+    print('x is greater than y')
+elif x > z:
+    print('x is greater than z')
+else:
+    print('if and elif never ran...')
+
+Here, we ask if x is greater than y first. 
+5 is not greater than 10, so this is False. 
+So the elif runs to ask if x is greater than z.
+In this case, it is asking if 5 is greater than 22.
+This is false, so it does not run. 
+Then, we find ourselves at the else statement, 
+which notifies us that 'if and elif never ran...'
