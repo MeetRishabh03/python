@@ -1,0 +1,58 @@
+  Function parameter:
+  
+  The idea of function parameters in Python is to allow a programmer who is using that function, 
+  define variables dynamically within that function. For example:
+
+def simple_addition(num1,num2):
+    answer = num1 + num2
+    print('num1 is', num1)
+    print(answer)
+
+simple_addition(5,3)
+
+Here,
+we defined our function name as simple_addition. 
+In the function parameters (often called parms for short), 
+we specify variables named num1 and num2.
+
+Next, 
+within the function,
+we say this new answer variable is equal to whatever num1 plus num2 is.
+We then print out what num1 is, whatever it happens to be. 
+Finally, the last line of this function just prints out the answer variable,
+which is num1 plus num2.
+
+Now, to run this function and make use of these parameters,
+we run simple_addition(5,3). 
+This runs the simple_addition function using the parameters of num1=5 and num2=3. 
+Then our program sums 5 and 3 together, 
+then we print out that num1 is 5, and finally we print out the "answer" which was defined already,
+which is the sum of 5 and 3, which is of course 8.
+
+There is no limit to the amount of function parameters you have.
+If you want to just specify the definitions of these parameters without saying the parameter, 
+like when we just said 5 and 3, instead of putting the parameter=5, 
+then you must put them in the exact order. 
+If you have a lot of parameters where it might be difficult to remember their order,
+you could do something like:
+
+simple_addition(num2=3,num1=5)
+
+In that case,
+when you call the function and define the parameters, 
+you can see how we actually defined num2 before num1, 
+even though in the function definition we ask for them in the other way around. 
+As long as you specify the parameter you are defining, you can jumble them up.
+Otherwise, you must keep them in order!
+
+Finally,
+not only must they be in perfect order,
+but you must not specify too many or two few definitions.
+
+This will not work:
+
+simple_addition(3,5,6)
+
+nor will this:
+
+simple_addition(3)
