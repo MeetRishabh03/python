@@ -1,0 +1,39 @@
+#for loop:
+
+
+for eachThing in thisThing:
+    do this stuff
+    in this block
+
+The next loop is the For loop.
+The idea of the for loop is to "iterate" through something. 
+For each thing in that something, it will do a block of code. 
+Most often, you will see a for loop's structure very much like this.
+
+So, again, why would someone use each type of loop?
+
+Typically, you will see the while loop being used for finite tasks that have predetermined length, 
+and the for loop being used for tasks that have uncertain and variable time-frames.
+
+That said, the for loop can be used for the exact same tasks as the while loop.
+
+For this reason,
+I prefer the for loop myself, 
+but again, it comes down to personal preference.
+
+Here's an example of a for loop:
+
+exampleList = [1,5,6,6,2,1,5,2,1,4]
+
+for x in exampleList:
+    print(x)
+
+This code will print out each item in that list.
+Usually, people will choose to actually do something with the item in the list, more than just printing it out, but this is just a basic example.
+
+Another example of a for loop is in the case of something like:
+
+for x in range(1,11):
+    print(x)
+
+This code is actually what is known as a generator function, and is highly efficient. The above works very much like the "counter" function we made with a while loop. The only difference is this one is much faster and more efficient in many cases.
